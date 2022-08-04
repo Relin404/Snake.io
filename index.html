@@ -45,7 +45,7 @@
       setTimeout(function onTick() {
         changingDirection = false;
         clearCanvas();
-        drawFood;
+        drawFood();
         advanceSnake();
         drawSnake();
         main();
@@ -115,10 +115,10 @@
     }
 
     function changeDirection(event) {
-      const LEFT_KEY = 37,
-        RIGHT_KEY = 39,
-        UP_KEY = 38,
-        DOWN_KEY = 40;
+      const leftKey = 37,
+        rightKey = 39,
+        upKey = 38,
+        downKey = 40;
 
       if (changingDirection) return;
 
@@ -129,19 +129,19 @@
         goingRight = dx === 10,
         goingLeft = dx === -10;
 
-      if (keyPressed === LEFT_KEY && !goingRight) {
+      if (keyPressed === leftKey && !goingRight) {
         dx = -10;
         dy = 0;
       }
-      if (keyPressed === UP_KEY && !goingDown) {
+      if (keyPressed === upKey && !goingDown) {
         dx = 0;
         dy = -10;
       }
-      if (keyPressed === RIGHT_KEY && !goingLeft) {
+      if (keyPressed === rightKey && !goingLeft) {
         dx = 10;
         dy = 0;
       }
-      if (keyPressed === DOWN_KEY && !goingUp) {
+      if (keyPressed === downKey && !goingUp) {
         dx = 0;
         dy = 10;
       }

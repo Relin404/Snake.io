@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap");
+
+#gameCanvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score {
+  text-align: center;
+  font-size: 140px;
+  font-family: "ZCOOL XiaoWei", cursive;
+}

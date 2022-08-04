@@ -1,2 +1,2 @@
 # Snake.io
-A basic snake game made with HTML, CSS, JS
+A basic snake game made with HTML, CSS, and JavaScript
